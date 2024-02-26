@@ -66,10 +66,10 @@ $apiInstance = new ApiGouv\Client\Api\CommunesApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$geom = "geom_example"; // string | Géométrie GeoJSON utilisée pour la recherche
-$insee = "insee_example"; // string | Code insee de la commune
+$geom = "{\"type\": \"Point\",\"coordinates\":[-1.691634,48.104237]}"; // string | Géométrie GeoJSON utilisée pour la recherche
+$insee = "35238"; // string | Code insee de la commune
 
-try {
+try { 
     $result = $apiInstance->gpuMunicipalityGet($geom, $insee);
     print_r($result);
 } catch (Exception $e) {
