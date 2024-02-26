@@ -1,7 +1,7 @@
 #!/bin/sh
 # ref: https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
 #
-# Usage example: /bin/sh ./git_push.sh jujudje06 api-gouv-php-client "init"
+# Usage example: /bin/sh ./git_push.sh userName api-gouv-php-client "commit msg"
 
 git_user_id=$1
 git_repo_id=$2
